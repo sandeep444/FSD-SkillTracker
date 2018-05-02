@@ -1,0 +1,40 @@
+ 
+<div class="container">
+    <div class="row"  style="margin-top: 50px">
+        <div class="col-1"> </div>
+        <div class="col-10" style="background-color: lightgray">
+            <div class="row" style="border-bottom: 5px solid white ">           
+                <div class="col-12">
+                    <p class="h2">Skill Tracker</p>
+                </div>           
+           </div>       
+           <div class="row">  
+              <div class="col-12">
+                  <nav class="navbar navbar-default">
+                      <div class="form-group row">       
+                        <div class="navbar-header">
+                          <a class="navbar-brand" [routerLink]="['/DashBoard']">
+                            DashBoard
+                          </a>
+                          <a class="navbar-brand" [routerLink]="['/SkillDetails']">
+                            Skill Management
+                             </a>
+                             <a class="navbar-brand" [routerLink]="['/AddAssociateSkill']">
+                                Add Associate Skill
+                                 </a>
+                        </div> 
+                        
+                      </div>
+                    </nav>
+              </div>
+            </div>
+            <div class="row">  
+                <div class="col-12">
+                    <router-outlet></router-outlet> 
+                </div>
+            </div>  
+    
+        </div>
+        <div class="col-1"></div>
+      </div>
+           

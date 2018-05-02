@@ -1,0 +1,54 @@
+
+    <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog>    
+    <p-dialog header="Update Skill" [(visible)]="display" [width]="600" [height]="150" [modal]='true'>
+        <div class="row">
+            <div class="col-9"> 
+                <input [(ngModel)]="updateSkillName" type="text" class="form-control" id="skillz">
+            </div>
+            <div class="col-3"> 
+                <button type="submit" class="btn btn-primary" (click)="UpdateSkill()" title="Update Skill" [disabled]='!updateSkillName'>Update</button>
+            </div>            
+        </div>
+    </p-dialog>
+
+
+
+    <div class="form-group">
+        <div class="col-sm-12">
+            <app-message-display [messageDisplay]='messageDisplay'
+                                 [messageType]='messageType'></app-message-display>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="h4">Add Skill   </p>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 10px">
+        <div class="col-12">
+            <input [(ngModel)]="filterString" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    <form class="form-horizontal" [formGroup]="form">
+        <div class="row" style="margin-bottom: 10px">
+            <div class="col-10">                
+                <input [(ngModel)]="skillDetail.SkillName" type="text" class="form-control" id="skillz" formControlName="skillz">
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary pull-right" (click)="AddSkill()" title="Add Skill" [disabled]="!form.valid">Add</button>
+            </div>
+        </div>
+    </form>
+    <div class="row" style="margin-bottom: 10px" *ngFor="let d of (skillDetails | skillFilter: filterString)">
+
+        <div class="col-8" >
+            <label style="border: 1px solid white; display:block; padding:6px;">  {{ d.SkillName }} </label>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-primary" (click)='showEditSkill(d)' title="Edit">Edit</button>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-primary" (click)='DeleteSkill(d)' title="Delete">Delete</button>
+        </div>
+    </div>
+    

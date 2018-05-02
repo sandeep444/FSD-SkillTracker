@@ -1,0 +1,5 @@
+C:\Assessment\SkillTracker.WebAPI\SkillTracker.BusinessEntities\bin\Debug\SkillTracker.BusinessEntities.dll
+C:\Assessment\SkillTracker.WebAPI\SkillTracker.BusinessEntities\bin\Debug\SkillTracker.BusinessEntities.pdb
+C:\Assessment\SkillTracker.WebAPI\SkillTracker.BusinessEntities\obj\Debug\SkillTracker.BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Assessment\SkillTracker.WebAPI\SkillTracker.BusinessEntities\obj\Debug\SkillTracker.BusinessEntities.dll
+C:\Assessment\SkillTracker.WebAPI\SkillTracker.BusinessEntities\obj\Debug\SkillTracker.BusinessEntities.pdb

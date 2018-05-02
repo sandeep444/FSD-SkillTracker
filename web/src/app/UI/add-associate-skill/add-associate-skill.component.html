@@ -1,0 +1,14 @@
+<p>
+  add-associate-skill works!
+</p>
+
+ <div class="row" style="margin-bottom: 10px" *ngFor="let d of associateSkill?.Skills">
+{{d.SkillName}}   
+  <p-slider styleClass="slider_style" [(ngModel)]="d.SkillRate" [min]="0" [max]="100" ></p-slider>  
+  </div> 
+<p>
+  {{associateSkill?.Skills | json}}
+</p>
+<p>
+  {{associateSkill | json}}
+</p>
